@@ -1,0 +1,67 @@
+﻿PYTHON PROJECT
+
+
+Deliverables:
+
+1. Webscrap data from a dataset website.
+
+2. Web App to perform CRUD database operations on the scrapped data above.
+
+3. Run app through Parser.
+
+
+Requirements:
+
+1. Python 3
+
+2. Flask
+
+3. Flask-SQLAlchemy
+
+4. Jinja 2
+
+5. Virtualenv
+
+6. Argparse
+
+7. BeatifulSoap
+
+
+
+How To Run:
+
+The case study for this project is Flipkart (https://www.flipkart.com/search?q=iphone&sid=tyy%2C4io&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_0_2&otracker1=AS_QueryStore_OrganicAutoSuggest_0_2&as-pos=0&as-type=RECENT&as-searchtext=Ip)
+
+
+This project is grouped in two folders to simplify the running process and focus on deliverables above.
+
+
+1. Webscarpping
+	
+	There are two files in this folder to achieve this section:
+	
+	A. Run the "websrap.py" and it will Crawl the above site and save CSV and JSON files extract in required folders.
+	
+	B. Run the "webscrap_parser.py" with parameters, to chose number of pages to display in terminal.
+
+	for more info run the following command in the terminal "webscrap_parser.py -h".
+
+2. Database/DB/my_db
+
+	Here, we created a virtualenv and have two files to achieve this web app.
+
+	A. Run the "main.py", this file runs the app normally (Creates the database and upload all
+ the scarpped data from 1 above) 
+	and asks you to visit the browser with given IP address.
+
+	B. Run the "web_app_parser.py", On default, this file runs the app as A abobe, but when you run with the parameter
+
+	"--op run" it opens a browser and displays the web app after few seconds. For more information, run the following
+
+	commnd in the terminal "web_app_parser.py -h"
+
+
+
+
+The files containig the lines of codes are well commented for easy readability.
+
